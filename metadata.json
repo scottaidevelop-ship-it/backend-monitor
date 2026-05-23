@@ -1,0 +1,6 @@
+{
+  "name": "可視化監控戰情室與告警管理系統",
+  "description": "整合 100~200 台伺服器運行監控、主動預警通報、轉檔結帳查詢、微服務重啟與排班值班管理之全方位智能運維平台",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

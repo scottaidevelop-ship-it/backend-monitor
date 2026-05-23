@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Space Grotesk", system-ui, sans-serif;
+  --font-display: "Space Grotesk", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  
+  --color-bento-bg: #ffffff;
+  --color-bento-panel: #fcfcfd;
+  --color-bento-subpanel: #f8fafc;
+  --color-bento-border: #e2e8f0;
+  --color-bento-border-hover: #cbd5e1;
+  --color-bento-accent: #e08b46;
+}
+
+/* Base body background update for Bento look */
+body {
+  background-color: #ffffff;
+  color: #1e293b;
+}
+
+/* Premium micro-interactions for modern Bento boxes */
+.bento-card {
+  background-color: rgba(255, 255, 255, 0.95);
+  border: 1px solid #e2e8f0;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(8px);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.bento-card:hover {
+  border-color: #e08b46;
+  box-shadow: 0 8px 30px -4px rgba(224, 139, 70, 0.1);
+  transform: translateY(-2px);
+}
+
+.bento-box-inner {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.75rem;
+}
+
+/* Custom glowing effects for our bank war room dashboard */
+.glow-green {
+  box-shadow: 0 0 14px rgba(16, 185, 129, 0.25), inset 0 0 8px rgba(16, 185, 129, 0.1);
+  border-color: rgba(16, 185, 129, 0.2);
+}
+.glow-yellow {
+  box-shadow: 0 0 14px rgba(245, 158, 11, 0.25), inset 0 0 8px rgba(245, 158, 11, 0.1);
+  border-color: rgba(245, 158, 11, 0.2);
+}
+.glow-red {
+  box-shadow: 0 0 14px rgba(244, 63, 94, 0.3), inset 0 0 8px rgba(244, 63, 94, 0.15);
+  border-color: rgba(244, 63, 94, 0.25);
+}
+
+/* Custom Scrollbar for better UI experience */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Custom pulse and glow indicators */
+.glow-pulse-orange {
+  box-shadow: 0 0 12px rgba(224, 139, 70, 0.35);
+}
+
+
